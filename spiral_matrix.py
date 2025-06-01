@@ -2,7 +2,7 @@ class Solution:
     def spiralOrder(self, matrix: list[list[int]]) -> list[int]:
         """
         TC: O(m*n)
-        AS:
+        AS: O(1)
         """
 
         m = len(matrix) #rows

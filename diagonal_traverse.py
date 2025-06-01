@@ -1,5 +1,9 @@
 class Solution:
     def findDiagonalOrder(self, mat: list[list[int]]) -> list[int]:
+        '''
+        TC: O(m*n)
+        AS: O(1)
+        '''
 
         if not mat or not mat[0]:
             return []
