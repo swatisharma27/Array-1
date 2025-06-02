@@ -25,18 +25,18 @@ class Solution:
             top += 1
 
             ## right row
-            for i in range(top, bottom+1): # base condition will be rechecked here for top-bottom as top was increased
+            for i in range(top, bottom+1): # base condition defined in the while loop will be rechecked here for top-bottom as top was increased
                 result.append(matrix[i][right])
             right -= 1
 
             ## bottom row
-            if top <= bottom:  # base condition needs to be checked here as bottom is used in the matrix append step
+            if top <= bottom:  # bbase condition defined in the while loop needs to be rechecked here as bottom is used in the matrix append step
                 for j in range(right, left-1, -1):
                     result.append(matrix[bottom][j])
                 bottom -=1
 
             ## left row
-            if left <= right: # base condition needs to be checked here as left is used in the matrix append step
+            if left <= right: # base condition defined in the while loop to be rechecked here as left is used in the matrix append step
                 for i in range(bottom, top-1, -1):
                     result.append(matrix[i][left])
                 left += 1

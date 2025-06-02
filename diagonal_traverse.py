@@ -20,7 +20,7 @@ class Solution:
             result.append(mat[i][j])
             if direction: #Upward Direction --> breach "top" and "right"
                 # 1) Top Breach
-                if i==0 and j!=n-1:  ## As for one of the corener i==0 and j==n-1 both if statements are true so j!=n-1
+                if i==0 and j!=n-1:  ## As for one of the corener i==0 and j!=n-1 both if statements are true so j!=n-1
                     direction = False #changes to downwards
                     j += 1
                 # 2) Right Breach
@@ -33,7 +33,7 @@ class Solution:
                     i -= 1
             else:
                 # 1) Left Breach
-                if j==0 and i!=m-1: ## As for one of the corener i==n-1 and j==0 both if statements are true so i!=m-1
+                if j==0 and i!=m-1: ## As for one of the corener i!=n-1 and j==0 both if statements are true so i!=m-1
                     direction = True #changes to upwards
                     i += 1
 

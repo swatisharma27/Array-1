@@ -20,7 +20,7 @@ class Solution:
 
         return result
 
-
-nums = [-1,1,0,-3,3]
-x = Solution()
-print(x.productExceptSelf(nums))
+if __name__ == "__main__":
+    nums = [-1,1,0,-3,3]
+    x = Solution()
+    print(x.productExceptSelf(nums))
